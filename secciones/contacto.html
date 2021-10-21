@@ -1,145 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <!-- Iconos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Estilos -->
-    <link rel="stylesheet" href="../sass/styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <meta name="descripcion" content="Venta de perfumes originales importados al mejor precio. Envios a todo el pais">
+    <meta name="keywords" content="perfumes, importados, fragancias, originales, perfumes hombre, perfumes mujer">
+
 </head>
 <body>
 
-    <div class="contenedorPrincipal">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light p-3 sticky-top">
+      <div class="container-fluid">
+        <h1><a class="navbar-brand" href="../index.html">Perfume Shop</a></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Lo nuevo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="../secciones/masculinos/fraganciasMasculinas.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                Fragancias Masculinas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="../secciones/masculinos/carolinaHerrenaHombre.html">Carolina Herrera</a></li>
+                <li><a class="dropdown-item" href="../secciones/masculinos/pacoRabanneHombre.html">Paco Rabanne</a></li>
+                <li><a class="dropdown-item" href="../secciones/masculinos/calvinKleinHombre.html">Calvin Klein</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="../secciones/femeninos/fraganciasFemeninas.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                Fragancias Femeninas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../secciones/femeninos/carolinaHerrenaMujer.html">Carolina Herrera</a></li>
+                  <li><a class="dropdown-item" href="../secciones/femeninos/pacoRabanneMujer.html">Paco Rabanne</a></li>
+                  <li><a class="dropdown-item" href="../secciones/femeninos/calvinKleinMujer.html">Calvin Klein</a></li>
+                  <li><a class="dropdown-item" href="../secciones/femeninos/lancome.html">Lancome</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../secciones/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../secciones/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <!--Header-->
-        <header class="header">
-            
-            <div class="top">
+      <!--Hero-->
 
-                <h1 class="top__logo">Perfume Shop</h1>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/carousel/carousel1.jpg" class="d-block w-100 img-fluid" alt="Imagen para carousel con un frasco">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/carousel/carousel2.jpg" class="d-block w-100 img-fluid" alt="Imagen para carousel con un frasco y petalos">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/carousel/carousel3.jpg" class="d-block w-100 img-fluid" alt="Imagen para carousel con dos frascos y flores">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-                <nav class="nav">
-                            
-                    <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="../index.html">Lo Nuevo</a></li>
-                        <li class="nav__item"><a class="nav__link" href="./fraganciasMasculinas.html">Fragancias Masculinas</a>
-                            <div class="nav__subMenu">
-                                <ul class="nav__subList">
-                                    <li class="nav__item"><a class="nav__link nav__link--color" href="./carolinaHerrenaMen.html">Carolina Herrera</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--color" href="./pacoRanneMen.html">Paco Rabanne</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--color" href="./calvinKleinMen.html">Calvin Klein</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav__item"><a class="nav__link" href="./fraganciasFemeninas.html">Fragancias Femeninas</a>
-                            <div class="nav__subMenu">
-                                <ul class="nav__subList">
-                                    <li class="nav__item"><a class="nav__link nav__link--color" href="./carolinaHerrenaWoman.html">Carolina Herrera</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--color" href="./pacoRanneWoman.html">Paco Rabanne</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--color" href="./calvinKleinWoman.html">Calvin Klein</a></li>
-                                    <li class="nav__item"><a class="nav__link nav__link--color" href="./lancome.html">Lancome</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav__item"><a class="nav__link" href="./nosotros.html">Nosotros</a></li>
-                        <li class="nav__item"><a class="nav__link" href="./contacto.html">Contacto</a></li>
-                    
-                    </ul>
-                </nav>
+      
+
+      <!-- Main -->
+      <div class="container">
+        <div><h2 class="text-center shadow-sm p-2">Contacto:</h2></div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-5 shadow rounded p-5">
+            <div class="row">
+              <div class="col mb-3">
+                <label class="form-label">Nombre</label>                
+                <input type="text" class="form-control" placeholder="Introduzca su nombre" aria-label="First name">
+              </div>  
+
+              <div class="col mb-3">
+                <label class="form-label">Apellido</label>   
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
             </div>
-        </header>
 
-        <!--Hero-->
-        <div class="hero">
-            <video class="hero__video" onloadedmetadata="this.muted=true" autoplay loop>
-            <source src="../video/perfume.mp4">
+            <div class="mb-3">
+              <label class="form-label">Correo electronico</label>
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
 
-            </video>
+            <div class="mb-3">
+              <label class="form-label">Motivo</label>
+              <select class="form-select" id="inlineFormSelectPref">
+                <option selected>Seleccione</option>
+                <option value="1">Consultas</option>
+                <option value="2">Sugerencias</option>
+                <option value="3">Compra</option>
+                <option value="4">Problema</option>
+              </select>
+            </div>
 
+            <div class="mb-3">
+              <label class="form-label">¿Desea recibir el Newsletter?</label>
+              <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">            </div>
 
+            <div class="mb-3">
+              <label class="form-label">Comentarios</label>
+              <textarea name="" class="form-control" placeholder="Escriba su mensaje" rows="3"></textarea>
+            </div>
 
-        </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Enviar
+            </button>
 
-
-        <!--Main-->
-        <main class="main">
-
-            <div class="contacto">
-            <h2 class="contacto__texto contacto__texto--h2">Contacto</h2>
-            <h3 class="contacto__texto contacto__texto--h2">Realizá tus consultas o sugerencias.</h3>
-            <form action="" method="GET">
-                <fieldset class="contacto__field">
-                    <legend>Info Personal</legend>
-                    
-                    <div>
-                        <label for="infoName">Nombre:</label>
-                        <input type="text" name="infoName" id="infoName" placeholder="Introduzca su nombre">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="infoLastname">Apellido:</label>
-                        <input type="text" name="infoLastName" id="infoLastName" placeholder="Introduzca su Apellido">
-                    </div>
-                    <br>
-                    <div>  
-                        <label for="infoMail">Correo electronico</label>
-                        <input type="email" name="infoMail" id="infoMail" placeholder="Introduzca su Correo">
-                    </div>   
-                    <br>
-                    <div>
-                        <label for="infoEstado">Motivo</label>
-                        <select name="infoEstado" id="infoEstado">
-                            <option value="consulta" disabled selected>Seleccione</option>
-                            <option value="consulta">Consultas</option>
-                            <option value="sugerencia`">Sugerencias</option>
-                            <option value="compra">Compra</option>
-                            <option value="problema">Problema</option>
-                        </select>
-                    </div> 
-                    <br> 
-                    <div>
-                        <label for="infoNews">¿Desea recibir el Newsletter?</label>
-                        <input type="checkbox" name="infoNews" id="infoNews" value="1">
-                    </div>
-                    <br>
-                    <div>
-                        <textarea name="comment" id="comment" cols="30" rows="10">Comentarios</textarea>
-                    </div>
-                    <br>
-        
-                    <div>
-                        <input class="contacto__btn" type="reset" value="Limpiar">
-                        <input class="contacto__btn" type="submit" value="Enviar">
-                    </div>
-                    
-                </fieldset>
-            </form>
-        </div>
-            
-            
-        </main>    
-
-
-
-        <!--Footer-->
-        <footer class="footer">
-            <section class="pie">
-                <div><P class="pie__texto">Copyright&copy; 2021 - Página creada por Lucas Peñalba - Todos los derechos reservados</P></div>
-                <div class="pie__redes">
-                    <a class="pie__link" href="https://twitter.com/"><i class="pie__ico fab fa-twitter"></i></a>
-                    <a class="pie__link" href="https://www.instagram.com/"><i class="pie__ico fab fa-instagram"></i></a>
-                    <a class="pie__link" href="https://www.facebook.com/"><i class="pie__ico fab fa-facebook-f"></i></a>
-                    <a class="pie__link" href="https://web.whatsapp.com/"><i class="pie__ico fab fa-whatsapp"></i></a>        
-                
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ¿Desea enviar el formulario?
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                  </div>
                 </div>
-            </section>
+              </div>
+            </div>      
 
-        </footer>
+          </div>
+
+          <div class="col-lg-6 col-md-7">
+            <div class="imgMsg">
+              <img src="../img/msg.jpg" alt="" class="img-fluid">
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
 
 
-    </div>
+
+      <!-- Footer -->
+
+      <footer class="bg-light text-center text-white mt-3">
+
+        <div class="container p-4 pb-0">
+    
+          <section class="mb-4">
+          <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1 face" href="https://www.facebook.com/" role="button">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+          <!-- Twitter -->
+            <a class="btn btn-primary btn-floating m-1 twit" href="https://twitter.com/" role="button">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+          <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1 insta" href="https://www.instagram.com/" role="button">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+          <!-- Whatsapp -->
+            <a class="btn btn-primary btn-floating m-1 whats" href="https://web.whatsapp.com/" role="button">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </section>
+
+        </div>
+
+
+        <div class="text-center p-3 pie">
+          Copyright&copy; 2021 - Página creada por Lucas Peñalba
+        </div>
+
+      </footer>
+
+      
+
+      
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
