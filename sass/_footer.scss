@@ -1,0 +1,32 @@
+.pie{
+    background-color: $pie;
+    display: flex;
+    width: 100%;
+    border: 1px solid $negro;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+
+    @include large{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    &__texto{
+        font-weight: 200;
+        color: $blanco;
+    }
+    &__ico{
+        color: $iconos;
+        font-size: 25px;
+        padding: 3px;
+        text-decoration: none;
+    }
+
+    &__redes{
+        @include large{
+            padding-bottom: 1rem;
+        }
+    }
+
+
+}
