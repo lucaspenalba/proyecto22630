@@ -1,26 +1,7 @@
-.top{
-    background-color: $cabecera;
-    display: flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    justify-content: space-between;
-
-    @include large{
-        flex-direction: column;
-    }
-
-    &__logo{
-    font-family: $gemumu;
-    color:whitesmoke;
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 10px;
-
-        @include large{
-            text-align: center;
-        }
-    }
-
-    
+.navbar{
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(48deg, rgba(2,0,36,1) 2%, rgba(234,191,159,1) 98%);
+    background: -webkit-linear-gradient(48deg, rgba(2,0,36,1) 2%, rgba(234,191,159,1) 98%);
+    background: linear-gradient(48deg, rgba(2,0,36,1) 2%, rgba(234,191,159,1) 98%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#eabf9f",GradientType=1); 
 }
