@@ -1,0 +1,57 @@
+.nav{
+    display: flex;
+    align-items: center; 
+    
+    @include large{
+        justify-content: center;
+    }
+
+    &__list{
+        display: flex;         
+    }
+    &__item{
+        padding: 15px 10px;
+        position: relative; 
+
+        @include large{
+            padding: 15px 1px;
+        }
+    }
+    &__link{
+        text-decoration: none;    
+        color: $blanco;
+        padding: 10px;    
+        text-align: center;
+        font-family: $gemumu;
+        font-weight: 600;
+        transition: all 1s;    
+        &:hover{
+            color: $negro;
+            font-size: 1.1rem;
+        }
+        &--color:hover{
+            color:$hovermenu;
+        }
+
+        @include large{
+            padding: 0;
+            margin: 3px;
+        }
+    }
+    &__subMenu{
+        display: none;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    &__item:hover &__subMenu{
+        display: block;
+        position: absolute;
+        background-color: $negro;
+        margin-top: 10px;
+    }
+    &__item:hover &__subList{
+        display: block;
+    }    
+    
+}
