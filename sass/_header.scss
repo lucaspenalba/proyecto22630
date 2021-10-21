@@ -1,0 +1,26 @@
+.top{
+    background-color: $cabecera;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+
+    @include large{
+        flex-direction: column;
+    }
+
+    &__logo{
+    font-family: $gemumu;
+    color:whitesmoke;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+
+        @include large{
+            text-align: center;
+        }
+    }
+
+    
+}
