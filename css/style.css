@@ -52,6 +52,7 @@
     
 }
 
+
 .btn-primary:hover{
     background-color: white;
     border: 1px solid #BDA388;
@@ -59,6 +60,7 @@
 
 }
 
+/*pie de pagina*/
 .pie{
     background: rgb(1,0,8);
     background: -moz-linear-gradient(357deg, rgba(1,0,8,1) 13%, rgba(234,191,159,1) 91%);
@@ -83,7 +85,7 @@
     background-color: #075E54;
 }
 
-
+/*Media queries*/
 @media screen and (min-width:1200px) {
     .carousel-item{
         height: 80vh;
