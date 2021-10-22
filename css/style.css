@@ -35,29 +35,45 @@
 
 }
 
-.articulo{
-    border-radius: 10px;
+/*Articulos*/
+
+.card{
+    margin-top: 1.5em;
+    padding: 1.5em 0.5em 0.5em;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: transform .3s;
 }
 
-.articulo:hover{
+.card:hover{
     transform: translateY(5px);
     cursor: pointer;
 }
 
 
-.btn-primary{
+.btn{
     background-color: #BDA388;
     border: 1px solid #BDA388;
     
 }
 
 
-.btn-primary:hover{
+.btn:hover{
     background-color: white;
     border: 1px solid #BDA388;
     color: black;
 
+}
+
+
+
+.hero{
+    width: 100%;    
+    
+    }
+.hero__video{
+    width: 100%;
 }
 
 /*pie de pagina*/
