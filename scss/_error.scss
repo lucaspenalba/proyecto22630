@@ -10,15 +10,10 @@
     }
     
     &__btn { 
-        margin-right:10px; 
-        color: $blanco;
-        background-color: $boton;
-        border: 1px solid $boton;
+        @include botones;
         
         &:hover{
-            background-color: $blanco;
-            border: 1px solid $boton;
-            color: $negro;        
+            @include hoverbtn;    
         }
     }
 }

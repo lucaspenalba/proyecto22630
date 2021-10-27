@@ -1,0 +1,13 @@
+
+@mixin botones {
+    color: $blanco;
+    background-color: $boton;
+    border: 1px solid $boton;           
+        
+}
+
+@mixin hoverbtn {
+    background-color: $blanco;
+    border: 1px solid $boton;
+    color: $negro;
+}

@@ -1,5 +1,5 @@
 @media screen and (min-width: 1200px) {
-  .carrousel-item {
+  .carousel-item {
     height: 80vh;
     object-fit: cover; } }
 
@@ -114,7 +114,6 @@
     margin-top: 15px;
     margin-bottom: 15px; }
   .error__btn {
-    margin-right: 10px;
     color: white;
     background-color: #BDA388;
     border: 1px solid #BDA388; }

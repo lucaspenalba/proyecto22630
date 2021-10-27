@@ -1,18 +1,13 @@
 .formulario{
 
     &__btn{
-        color: $blanco;
-        background-color: $boton;
-        border: 1px solid $boton;
+        @include botones;
         
         &:hover{
-            background-color: $blanco;
-            border: 1px solid $boton;
-            color: black;
-            
+            @include hoverbtn;          
         
         }
     }
 
-   
+
 }
