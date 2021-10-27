@@ -1,79 +1,3 @@
-.navbar {
-  background: #020024;
-  background: -moz-linear-gradient(48deg, #020024 2%, #eabf9f 98%);
-  background: -webkit-linear-gradient(48deg, #020024 2%, #eabf9f 98%);
-  background: linear-gradient(48deg, #020024 2%, #eabf9f 98%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#eabf9f",GradientType=1); }
-
-.nav-link {
-  color: white !important;
-  transition: all 1s; }
-
-.nav-link:hover {
-  color: black !important;
-  font-size: 1.05rem; }
-
-.navbar-brand {
-  color: white !important; }
-
-.dropdown-menu {
-  background-color: black; }
-
-.dropdown-item {
-  color: white; }
-
-.dropdown:hover .dropdown-menu {
-  display: block; }
-
-/*Articulos*/
-.card {
-  margin-top: 1.5em;
-  padding: 1.5em 0.5em 0.5em;
-  border-radius: 1em;
-  text-align: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  transition: transform .3s; }
-
-.card:hover {
-  transform: translateY(5px);
-  cursor: pointer; }
-
-.btn {
-  background-color: #BDA388;
-  border: 1px solid #BDA388; }
-
-.btn:hover {
-  background-color: white;
-  border: 1px solid #BDA388;
-  color: black; }
-
-.hero {
-  width: 100%; }
-
-.hero__video {
-  width: 100%; }
-
-/*pie de pagina*/
-.pie {
-  background: #010008;
-  background: -moz-linear-gradient(357deg, #010008 13%, #eabf9f 91%);
-  background: -webkit-linear-gradient(357deg, #010008 13%, #eabf9f 91%);
-  background: linear-gradient(357deg, #010008 13%, #eabf9f 91%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010008",endColorstr="#eabf9f",GradientType=1); }
-
-.face {
-  background-color: #3b5998; }
-
-.insta {
-  background-color: #ac2bac; }
-
-.twit {
-  background-color: #55acee; }
-
-.whats {
-  background-color: #075E54; }
-
-/*Media queries*/
 @media screen and (min-width: 1200px) {
   .carousel-item {
     height: 80vh;
@@ -82,6 +6,105 @@
 @media screen and (max-width: 768px) {
   .imgMsg {
     display: none; } }
+
+.navegacion {
+  background: #020024;
+  background: -moz-linear-gradient(48deg, #020024 2%, #eabf9f 98%);
+  background: -webkit-linear-gradient(48deg, #020024 2%, #eabf9f 98%);
+  background: linear-gradient(48deg, #020024 2%, #eabf9f 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#eabf9f",GradientType=1); }
+  .navegacion__texto {
+    color: white !important;
+    text-shadow: 3px 3px 3px #ababab; }
+    .navegacion__texto--link {
+      text-shadow: 2px 2px 2px #ababab;
+      transition: all 1s; }
+      .navegacion__texto--link:hover {
+        color: black !important;
+        font-size: 1.05rem; }
+    .navegacion__texto--subLink {
+      text-shadow: 2px 2px 2px #ababab; }
+      .navegacion__texto--subLink:hover {
+        color: black !important; }
+  .navegacion__subList {
+    background-color: black; }
+  .navegacion__subMenu:hover .navegacion__subList {
+    display: block; }
+
+/*Hero*/
+.hero {
+  position: relative;
+  opacity: 0.9; }
+  .hero__video {
+    height: 100vh;
+    width: 100%;
+    background-position: absolute;
+    object-fit: cover; }
+
+/*Carousel hero*/
+.carrousel__img {
+  opacity: 0.8; }
+
+/*Articulos*/
+.articulo {
+  margin-top: 1.5em;
+  padding: 1.5em 0.5em 0.5em;
+  border-radius: 1em;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform .3s; }
+  .articulo:hover {
+    transform: translateY(5px);
+    cursor: pointer; }
+  .articulo__btn {
+    color: white;
+    background-color: #BDA388;
+    border: 1px solid #BDA388; }
+    .articulo__btn:hover {
+      background-color: white;
+      border: 1px solid #BDA388;
+      color: black; }
+
+.formulario__btn {
+  color: white;
+  background-color: #BDA388;
+  border: 1px solid #BDA388; }
+  .formulario__btn:hover {
+    background-color: white;
+    border: 1px solid #BDA388;
+    color: black; }
+
+/*pie de pagina*/
+.pie__face {
+  background-color: #3b5998;
+  border: none; }
+  .pie__face:hover {
+    background-color: gray; }
+
+.pie__insta {
+  background-color: #ac2bac;
+  border: none; }
+  .pie__insta:hover {
+    background-color: gray; }
+
+.pie__twit {
+  background-color: #55acee;
+  border: none; }
+  .pie__twit:hover {
+    background-color: gray; }
+
+.pie__whats {
+  background-color: #075E54;
+  border: none; }
+  .pie__whats:hover {
+    background-color: gray; }
+
+.pie__texto {
+  background: #010008;
+  background: -moz-linear-gradient(357deg, #010008 13%, #eabf9f 91%);
+  background: -webkit-linear-gradient(357deg, #010008 13%, #eabf9f 91%);
+  background: linear-gradient(357deg, #010008 13%, #eabf9f 91%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010008",endColorstr="#eabf9f",GradientType=1); }
 
 /*404 Not Found*/
 .error-template {

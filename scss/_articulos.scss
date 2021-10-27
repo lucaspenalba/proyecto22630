@@ -1,0 +1,27 @@
+/*Articulos*/
+
+.articulo{
+    margin-top: 1.5em;
+    padding: 1.5em 0.5em 0.5em;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform .3s;
+    &:hover{
+        transform: translateY(5px);
+        cursor: pointer;
+    }
+    
+    &__btn{
+        color: white;
+        background-color: #BDA388;
+        border: 1px solid #BDA388;
+        
+        &:hover{
+            background-color: white;
+            border: 1px solid #BDA388;
+            color: black;
+        
+        }
+    }
+}

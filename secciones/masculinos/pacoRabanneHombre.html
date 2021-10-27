@@ -17,43 +17,43 @@
 <body>
 
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light p-3 sticky-top">
-      <div class="container-fluid">
-        <h1><a class="navbar-brand" href="../../index.html">Perfume Shop</a></h1>
+    <nav class="navbar navbar-expand-lg p-3 sticky-top navegacion">
+      <div class="container">
+        <h1><a class="navbar-brand navegacion__texto" href="../../index.html">Perfume Shop</a></h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href="../../index.html">Lo nuevo</a>
+              <a class="nav-link navegacion__texto navegacion__texto--link" href="../../index.html">Lo nuevo</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="../masculinos/fraganciasMasculinas.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+            <li class="nav-item dropdown navegacion__subMenu">
+              <a class="nav-link navegacion__texto navegacion__texto--link" href="../masculinos/fraganciasMasculinas.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
                 Fragancias Masculinas
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="../masculinos/carolinaHerrenaHombre.html">Carolina Herrera</a></li>
-                <li><a class="dropdown-item" href="../masculinos/pacoRabanneHombre.html">Paco Rabanne</a></li>
-                <li><a class="dropdown-item" href="../masculinos/calvinKleinHombre.html">Calvin Klein</a></li>
+              <ul class="dropdown-menu navegacion__subList" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../masculinos/carolinaHerrenaHombre.html">Carolina Herrera</a></li>
+                <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../masculinos/pacoRabanneHombre.html">Paco Rabanne</a></li>
+                <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../masculinos/calvinKleinHombre.html">Calvin Klein</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="../femeninos/fraganciasFemeninas.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+            <li class="nav-item dropdown navegacion__subMenu">
+              <a class="nav-link navegacion__texto navegacion__texto--link" href="../femeninos/fraganciasFemeninas.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
                 Fragancias Femeninas
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="../femeninos/carolinaHerrenaMujer.html">Carolina Herrera</a></li>
-                  <li><a class="dropdown-item" href="../femeninos/pacoRabanneMujer.html">Paco Rabanne</a></li>
-                  <li><a class="dropdown-item" href="../femeninos/calvinKleinMujer.html">Calvin Klein</a></li>
-                  <li><a class="dropdown-item" href="../femeninos/lancome.html">Lancome</a></li>
+              <ul class="dropdown-menu navegacion__subList" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../femeninos/carolinaHerrenaMujer.html">Carolina Herrera</a></li>
+                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../femeninos/pacoRabanneMujer.html">Paco Rabanne</a></li>
+                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../femeninos/calvinKleinMujer.html">Calvin Klein</a></li>
+                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../femeninos/lancome.html">Lancome</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../nosotros.html">Nosotros</a>
+              <a class="nav-link navegacion__texto navegacion__texto--link" href="../nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../contacto.html">Contacto</a>
+              <a class="nav-link navegacion__texto navegacion__texto--link" href="../contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -92,25 +92,25 @@
             <div class="row justify-content-sm-center">
 
                 <div class="col-sm-6 col-md-4 col-lg-3 mt-3 text-center">
-                  <div class="card">
+                  <div class="card articulo">
                     <img src="../../img/perfumes/phantom.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">PHANTOM</h5>
                       <p class="card-text">Paco Rabanne</p>
                       <p class="card-text">$13200</p>
-                      <a href="#" class="btn btn-primary"> Comprar</a>
+                      <a href="#" class="btn articulo__btn"> Comprar</a>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-sm-6 col-md-4 col-lg-3 mt-3 text-center">
-                  <div class="card">
+                  <div class="card articulo">
                     <img src="../../img/perfumes/pure-xs.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">PURE XS</h5>
                       <p class="card-text">Paco Rabanne</p>
                       <p class="card-text">$9800</p>
-                      <a href="#" class="btn btn-primary"> Comprar</a>
+                      <a href="#" class="btn articulo__btn"> Comprar</a>
                     </div>
                   </div>
                 </div>       
@@ -122,28 +122,28 @@
 
       <!-- Footer -->
 
-      <footer class="bg-light text-center text-white mt-3">
+      <footer class="bg-light text-center text-white mt-3 pie">
 
         <div class="container p-4 pb-0">
     
-          <section class="mb-4">
+          <section class="mb-4 pie_redes">
           <!-- Facebook -->
-            <a class="btn btn-primary btn-floating m-1 face" href="https://www.facebook.com/" role="button">
+            <a class="btn btn-primary btn-floating m-1 pie_redes pie__face" href="https://www.facebook.com/" role="button">
               <i class="fab fa-facebook-f"></i>
             </a>
 
           <!-- Twitter -->
-            <a class="btn btn-primary btn-floating m-1 twit" href="https://twitter.com/" role="button">
+            <a class="btn btn-primary btn-floating m-1 pie__twit" href="https://twitter.com/" role="button">
               <i class="fab fa-twitter"></i>
             </a>
 
           <!-- Instagram -->
-            <a class="btn btn-primary btn-floating m-1 insta" href="https://www.instagram.com/" role="button">
+            <a class="btn btn-primary btn-floating m-1 pie__insta" href="https://www.instagram.com/" role="button">
               <i class="fab fa-instagram"></i>
             </a>
 
           <!-- Whatsapp -->
-            <a class="btn btn-primary btn-floating m-1 whats" href="https://web.whatsapp.com/" role="button">
+            <a class="btn btn-primary btn-floating m-1 pie__whats" href="https://web.whatsapp.com/" role="button">
               <i class="fab fa-whatsapp"></i>
             </a>
           </section>
@@ -151,7 +151,7 @@
         </div>
 
 
-        <div class="text-center p-3 pie">
+        <div class="text-center p-3 pie__texto">
           Copyright&copy; 2021 - Página creada por Lucas Peñalba
         </div>
 

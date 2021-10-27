@@ -1,0 +1,20 @@
+/*Hero*/
+.hero{
+    position: relative;
+    opacity: 0.9;    
+    &__video{
+        height: 100vh;
+        width: 100%;
+        background-position: absolute;
+        object-fit: cover;
+    }
+}
+
+
+/*Carousel hero*/
+.carrousel{
+    &__img{
+        opacity: 0.8;               
+    }
+}
+
