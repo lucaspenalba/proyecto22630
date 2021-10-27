@@ -1,0 +1,18 @@
+.formulario{
+
+    &__btn{
+        color: white;
+        background-color: #BDA388;
+        border: 1px solid #BDA388;
+        
+        &:hover{
+            background-color: white;
+            border: 1px solid #BDA388;
+            color: black;
+            
+        
+        }
+    }
+
+   
+}

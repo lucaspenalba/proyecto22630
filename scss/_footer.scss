@@ -1,0 +1,43 @@
+/*pie de pagina*/
+.pie{
+    
+
+    &__face{
+        background-color: #3b5998;
+        border: none;
+        &:hover{
+            background-color: gray;
+        }
+    }
+    
+    &__insta{
+        background-color: #ac2bac;
+        border: none;
+        &:hover{
+            background-color: gray;
+        }
+    }
+    
+    &__twit{
+        background-color: #55acee;
+        border: none;
+        &:hover{
+            background-color: gray;
+        }
+    }
+    
+    &__whats{
+        background-color: #075E54;
+        border: none;
+        &:hover{
+            background-color: gray;
+        }
+    }
+    &__texto{
+        background: rgb(1,0,8);
+        background: -moz-linear-gradient(357deg, rgba(1,0,8,1) 13%, rgba(234,191,159,1) 91%);
+        background: -webkit-linear-gradient(357deg, rgba(1,0,8,1) 13%, rgba(234,191,159,1) 91%);
+        background: linear-gradient(357deg, rgba(1,0,8,1) 13%, rgba(234,191,159,1) 91%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010008",endColorstr="#eabf9f",GradientType=1); 
+    }
+}

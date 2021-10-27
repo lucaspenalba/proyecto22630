@@ -1,123 +1,12 @@
-.navbar{
-    background: rgb(2,0,36);
-    background: -moz-linear-gradient(48deg, rgba(2,0,36,1) 2%, rgba(234,191,159,1) 98%);
-    background: -webkit-linear-gradient(48deg, rgba(2,0,36,1) 2%, rgba(234,191,159,1) 98%);
-    background: linear-gradient(48deg, rgba(2,0,36,1) 2%, rgba(234,191,159,1) 98%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#eabf9f",GradientType=1); 
-}
-
-.nav-link{
-    color: white !important;
-    transition: all 1s;
-}
-
-.nav-link:hover{
-    color: black !important;
-    font-size: 1.05rem;    
-
-} 
-
-
-.navbar-brand{
-    color: white !important;
-}
-
-.dropdown-menu{
-    background-color: black;
-}
-
-.dropdown-item{
-    color: white;
-}
-
-.dropdown:hover .dropdown-menu{
-    display: block;
-
-}
-
-/*Articulos*/
-
-.card{
-    margin-top: 1.5em;
-    padding: 1.5em 0.5em 0.5em;
-    border-radius: 1em;
-    text-align: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transition: transform .3s;
-}
-
-.card:hover{
-    transform: translateY(5px);
-    cursor: pointer;
-}
-
-
-.btn{
-    background-color: #BDA388;
-    border: 1px solid #BDA388;
-    
-}
-
-
-.btn:hover{
-    background-color: white;
-    border: 1px solid #BDA388;
-    color: black;
-
-}
+@import "./mediaQueries";
+@import "./navega";
+@import "./hero";
+@import "./articulos";
+@import "./form";
+@import "./footer";
 
 
 
-.hero{
-    width: 100%;    
-    
-    }
-.hero__video{
-    width: 100%;
-}
-
-/*pie de pagina*/
-.pie{
-    background: rgb(1,0,8);
-    background: -moz-linear-gradient(357deg, rgba(1,0,8,1) 13%, rgba(234,191,159,1) 91%);
-    background: -webkit-linear-gradient(357deg, rgba(1,0,8,1) 13%, rgba(234,191,159,1) 91%);
-    background: linear-gradient(357deg, rgba(1,0,8,1) 13%, rgba(234,191,159,1) 91%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010008",endColorstr="#eabf9f",GradientType=1); 
-}
-
-.face{
-    background-color: #3b5998;
-}
-
-.insta{
-    background-color: #ac2bac;
-}
-
-.twit{
-    background-color: #55acee;
-}
-
-.whats{
-    background-color: #075E54;
-}
-
-/*Media queries*/
-@media screen and (min-width:1200px) {
-    .carousel-item{
-        height: 80vh;
-        object-fit: cover;
-    }
-    
-    
-}
-
-@media screen and (max-width:768px) {
-    .imgMsg{
-        display: none;
-    }
-    
-    
-}
 
 
 /*404 Not Found*/
