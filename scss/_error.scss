@@ -1,0 +1,24 @@
+/*404 Not Found*/
+
+.error {
+    padding: 40px 15px;
+    text-align: center;
+
+    &__actions {
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+    
+    &__btn { 
+        margin-right:10px; 
+        color: $blanco;
+        background-color: $boton;
+        border: 1px solid $boton;
+        
+        &:hover{
+            background-color: $blanco;
+            border: 1px solid $boton;
+            color: $negro;        
+        }
+    }
+}

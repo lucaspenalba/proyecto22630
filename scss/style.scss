@@ -1,26 +1,8 @@
+@import "./color";
 @import "./mediaQueries";
 @import "./navega";
 @import "./hero";
 @import "./articulos";
 @import "./form";
 @import "./footer";
-
-
-
-
-
-/*404 Not Found*/
-
-.error-template {
-    padding: 40px 15px;
-    text-align: center;
-}
-
-.error-actions {
-    margin-top:15px;
-    margin-bottom:15px;
-}
-
-.error-actions .btn { 
-    margin-right:10px; 
-}
+@import "./error";

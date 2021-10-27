@@ -3,34 +3,34 @@
     
 
     &__face{
-        background-color: #3b5998;
+        background-color: $facebook;
         border: none;
         &:hover{
-            background-color: gray;
+            background-color: $gris;
         }
     }
     
     &__insta{
-        background-color: #ac2bac;
+        background-color: $instagram;
         border: none;
         &:hover{
-            background-color: gray;
+            background-color: $gris;
         }
     }
     
     &__twit{
-        background-color: #55acee;
+        background-color: $twitter;
         border: none;
         &:hover{
-            background-color: gray;
+            background-color: $gris;
         }
     }
     
     &__whats{
-        background-color: #075E54;
+        background-color: $whatsapp;
         border: none;
         &:hover{
-            background-color: gray;
+            background-color: $gris;
         }
     }
     &__texto{

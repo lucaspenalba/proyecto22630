@@ -7,29 +7,29 @@
 
     &__texto{
 
-        color: white !important;
-        text-shadow: 3px 3px 3px #ababab;
+        color: $blanco !important;
+        text-shadow: 3px 3px 3px $sombraletra;
         
         &--link{
-            text-shadow: 2px 2px 2px #ababab;
+            text-shadow: 2px 2px 2px $sombraletra;
             transition: all 1s;
 
             &:hover{
-                color: black !important;
+                color: $negro !important;
                 font-size: 1.05rem;    
             }   
         }
 
         &--subLink{
-            text-shadow: 2px 2px 2px #ababab;
+            text-shadow: 2px 2px 2px $sombraletra;
             &:hover{
-                color: black !important;  
+                color: $negro !important;  
             }   
         }
     }
 
     &__subList{
-        background-color: black;
+        background-color: $negro;
     }
 
     

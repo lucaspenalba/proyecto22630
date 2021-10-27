@@ -1,5 +1,5 @@
 @media screen and (min-width: 1200px) {
-  .carousel-item {
+  .carrousel-item {
     height: 80vh;
     object-fit: cover; } }
 
@@ -31,7 +31,7 @@
   .navegacion__subMenu:hover .navegacion__subList {
     display: block; }
 
-/*Hero*/
+/*Hero video*/
 .hero {
   position: relative;
   opacity: 0.9; }
@@ -43,7 +43,7 @@
 
 /*Carousel hero*/
 .carrousel__img {
-  opacity: 0.8; }
+  opacity: 0.9; }
 
 /*Articulos*/
 .articulo {
@@ -107,13 +107,18 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010008",endColorstr="#eabf9f",GradientType=1); }
 
 /*404 Not Found*/
-.error-template {
+.error {
   padding: 40px 15px;
   text-align: center; }
-
-.error-actions {
-  margin-top: 15px;
-  margin-bottom: 15px; }
-
-.error-actions .btn {
-  margin-right: 10px; }
+  .error__actions {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .error__btn {
+    margin-right: 10px;
+    color: white;
+    background-color: #BDA388;
+    border: 1px solid #BDA388; }
+    .error__btn:hover {
+      background-color: white;
+      border: 1px solid #BDA388;
+      color: black; }

@@ -1,13 +1,13 @@
 .formulario{
 
     &__btn{
-        color: white;
-        background-color: #BDA388;
-        border: 1px solid #BDA388;
+        color: $blanco;
+        background-color: $boton;
+        border: 1px solid $boton;
         
         &:hover{
-            background-color: white;
-            border: 1px solid #BDA388;
+            background-color: $blanco;
+            border: 1px solid $boton;
             color: black;
             
         
