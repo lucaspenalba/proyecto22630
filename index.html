@@ -16,12 +16,12 @@
 <body>
 
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light p-3 fixed-top navegacion">
+    <nav class="navbar fixed-top navbar-expand-lg p-3 navbar-light navegacion">
         <div class="container">
           <h1><a class="navbar-brand navegacion__texto" href="./index.html">Perfume Shop</a></h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button>      
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto align-items-center">
               <li class="nav-item">
@@ -54,10 +54,25 @@
               <li class="nav-item">
                 <a class="nav-link navegacion__texto navegacion__texto--link" href="./secciones/contacto.html">Contacto</a>
               </li>
+              <!--Boton carrito de compras-->
+              <a class="btn btn-primary btn-floating navegacion__carro" role="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <i class="fas fa-shopping-cart"></i>              
+              </a>         
             </ul>
-          </div>
-        </div>
+          </div>           
+
+        </div>        
       </nav>
+      <!--Offcanvas-->
+      <div class="offcanvas offcanvas-end despliega" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header despliega__cuerpo">
+          <h5 id="offcanvasRightLabel">Carrito de Compras</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body despliega__texto">
+          aun no tiene productos en su carrito de compras
+        </div>
+      </div>    
 
       <!--Hero-->
 
@@ -235,7 +250,10 @@
                 </div>       
             
             </div>
+
+
       </div>
+
 
 
 
@@ -283,6 +301,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
     <script type="text/javascript">
       var nav = document.querySelector('nav');
 

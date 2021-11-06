@@ -30,6 +30,24 @@
     background-color: black; }
   .navegacion__subMenu:hover .navegacion__subList {
     display: block; }
+  .navegacion__carro {
+    background-color: transparent;
+    font-size: 20px;
+    border: none; }
+    .navegacion__carro:hover {
+      background-color: transparent;
+      color: black; }
+
+.despliega {
+  border-radius: 3%;
+  text-align: center; }
+  .despliega__cuerpo {
+    background-color: #BDA388;
+    color: white;
+    text-transform: uppercase; }
+  .despliega__texto {
+    text-transform: uppercase;
+    padding-top: 20rem; }
 
 /*Hero video*/
 .hero {

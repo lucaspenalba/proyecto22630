@@ -37,4 +37,33 @@
         display: block;
     
     }
+
+    &__carro{
+        background-color: transparent;
+        font-size: 20px;
+        border: none;
+        
+        
+        &:hover{
+            background-color: transparent;
+            color: $negro;
+        }
+    }
+}
+
+
+.despliega{
+    border-radius: 3%;
+    text-align: center;
+    
+    &__cuerpo{
+        background-color:$boton;
+        color: $blanco;
+        text-transform: uppercase;
+        
+    }
+    &__texto{
+        text-transform: uppercase;
+        padding-top: 20rem;
+    }
 }
