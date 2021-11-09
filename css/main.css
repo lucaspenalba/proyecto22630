@@ -45,9 +45,12 @@
     background-color: #BDA388;
     color: white;
     text-transform: uppercase; }
+  .despliega__img {
+    width: 100px;
+    padding-top: 18rem; }
   .despliega__texto {
     text-transform: uppercase;
-    padding-top: 20rem; }
+    padding-top: 1rem; }
 
 /*Hero video*/
 .hero {

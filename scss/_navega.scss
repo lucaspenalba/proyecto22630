@@ -62,8 +62,12 @@
         text-transform: uppercase;
         
     }
+    &__img{
+        width: 100px;
+        padding-top: 18rem;
+    }
     &__texto{
         text-transform: uppercase;
-        padding-top: 20rem;
+        padding-top: 1rem;
     }
 }
