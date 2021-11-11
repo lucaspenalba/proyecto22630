@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @media screen and (min-width: 1200px) {
   .carousel-item {
     height: 80vh;
@@ -82,6 +83,78 @@
     background-color: #BDA388;
     border: 1px solid #BDA388; }
     .articulo__btn:hover {
+      background-color: white;
+      border: 1px solid #BDA388;
+      color: black; }
+
+.CarrouselProd__img {
+  cursor: pointer; }
+
+.modalGallery {
+  width: 100%; }
+  .modalGallery__img {
+    width: 100%; }
+
+.prodInf__marca {
+  font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: gray; }
+
+.prodInf__fragancia {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+.prodInf__precio {
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #886E6C; }
+
+.prodInf__medida, .prodInf__cantidad {
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  text-transform: uppercase; }
+
+.prodInf__separa {
+  margin-bottom: 1rem; }
+  .prodInf__separa--segunda {
+    padding: 0.5rem; }
+
+.prodInf__descripcion {
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.prodInf__detalle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.prodInf__btn {
+  color: white;
+  background-color: #BDA388;
+  border: 1px solid #BDA388; }
+  .prodInf__btn:hover {
+    background-color: white;
+    border: 1px solid #BDA388;
+    color: black; }
+
+.prodRelacionados {
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .prodRelacionados__btn {
+    color: white;
+    background-color: #BDA388;
+    border: 1px solid #BDA388; }
+    .prodRelacionados__btn:hover {
       background-color: white;
       border: 1px solid #BDA388;
       color: black; }

@@ -1,0 +1,83 @@
+.CarrouselProd{
+    &__img{
+        cursor: pointer;
+    }
+}
+
+.modalGallery{
+    width: 100%;
+    &__img{
+        width: 100%;
+    }
+}
+
+
+.prodInf{
+    &__marca{
+        font-family: 'Roboto Slab', serif;
+        font-size: 15px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: gray;
+    }
+    &__fragancia{
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    &__precio{
+        font-family: 'Roboto Slab', serif;
+        font-size: 22px;
+        font-weight: 800;
+        color:#886E6C;
+    }
+    &__medida, &__cantidad{
+        font-family: 'Roboto Slab', serif;
+        font-size: 12px;
+        text-transform: uppercase;
+    }    
+    &__separa{        
+        margin-bottom: 1rem;
+        &--segunda{
+            padding: 0.5rem;
+        }
+    }
+
+    &__descripcion{
+        font-family: 'Roboto Slab', serif;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__detalle{
+        font-family: 'Roboto Slab', serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__btn{
+        @include botones;
+        
+        &:hover{
+            @include hoverbtn;          
+        
+        }
+    }
+}
+
+.prodRelacionados{
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &__btn{
+        @include botones;
+        
+        &:hover{
+            @include hoverbtn;          
+        
+        }
+    }
+}
