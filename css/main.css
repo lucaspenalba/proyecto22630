@@ -79,6 +79,16 @@
   .articulo:hover {
     transform: translateY(5px);
     cursor: pointer; }
+  .articulo__descripcion {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase; }
+    .articulo__descripcion--marca {
+      font-size: 15px;
+      color: gray; }
+    .articulo__descripcion--precio {
+      font-size: 20px; }
   .articulo__btn {
     color: white;
     background-color: #BDA388;
