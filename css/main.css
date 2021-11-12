@@ -200,6 +200,21 @@
     border: 1px solid #BDA388;
     color: black; }
 
+.modalGallery {
+  width: 100%; }
+  .modalGallery__img {
+    width: 100%; }
+
+.us__titulo {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem; }
+  .us__titulo--texto {
+    font-size: 1rem;
+    font-weight: 400; }
+
 /*pie de pagina*/
 .pie__face {
   background-color: #3b5998;
