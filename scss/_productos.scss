@@ -1,5 +1,7 @@
 .CarrouselProd{
     &__img{
+        width:100%;
+        object-fit: cover;
         cursor: pointer;
     }
 }
@@ -56,6 +58,7 @@
         font-weight: 400;
         text-transform: uppercase;
     }
+
     &__btn{
         @include botones;
         

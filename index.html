@@ -64,10 +64,10 @@
         </div>        
       </nav>
       <!--Offcanvas-->
-      <div class="offcanvas offcanvas-end despliega" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas offcanvas-end despliega" tabindex="2" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header despliega__cuerpo">
           <h5 id="offcanvasRightLabel">Carrito de Compras</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="close"></button>
         </div>
 
         <div class="offcanvas-body">
@@ -260,9 +260,12 @@
 
             <!-- Modal -->
 
-            <div class="modal fade" id="vipMen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            <div class="modal fade modalArt" id="vipMen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
@@ -270,412 +273,657 @@
                           <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/212-vip-men-black.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>212 Vip Black</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Carolina Herrera</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$11300</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="vipHer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="vipHer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/212-vip.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/212-vip.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>212 Vip</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Carolina Herrera</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$8570</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="badBoy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="badBoy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/bad-boy.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/bad-boy.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>Bad Boy</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Carolina Herrera</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$9500</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="one" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="one" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/ck-one.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/ck-one.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>One</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Calvin Klein</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$8400</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="eternity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="eternity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/eternity-for-men-edp.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/eternity-for-men-edp.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>Eternity Men</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Calvin Klein</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$8190</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="eternityHer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="eternityHer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/eternity-for-woman-edp.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/eternity-for-woman-edp.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>Eternity Woman</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Calvin Klein</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$8990</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="goodGirl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="goodGirl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/good-girl.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/good-girl.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>Good Girl</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Carolina Herrera</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$10200</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="hypnose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="hypnose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/hypnose.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/hypnose.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>Hypnose</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Lancome</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$12570</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="laVie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="laVie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/la-vie-est-belle.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/la-vie-est-belle.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>La vie est belle</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Lancome</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$11500</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="olympea" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="olympea" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/olympea.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/olympea.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>Olympea Aqua</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Paco Rabanne</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$9770</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="phantom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="phantom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/phantom.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/phantom.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>Phantom</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Paco Rabanne</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$13200</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="pureXsHer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="pureXsHer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/pure-xs-for-her.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/pure-xs-for-her.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>Pure XS</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Paco Rabanne</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$9800</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="modal fade" id="pureXs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg modal-lg">
-                <div class="modal-content">                
+            </div> 
+            
+            <div class="modal fade modalArt" id="pureXs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header modalArt__header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>                
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row">
-                        <div class="col-6">              
-                          <img src="./img/perfumes/pure-xs.jpg"
-                            class="img-fluid" alt="">
+                        <div class="col-6">
+                          <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/pure-xs.jpg" class="img-fluid" alt=""></a>              
                         </div>  
                         <div class="col-6">
-                          <h2 class="h2">
+                          <h2 class="h2 modalArt__detalle">
                             <strong>Pure XS</strong>
                           </h2>
-                          <h3 class="h4">
+                          <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
                             <strong>Paco Rabanne</strong>
                         </h3>  
-                          <h4 class="h4">
+                          <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
                               <strong>$9800</strong>
-                          </h4>  
-                        </div>
-                      </div>          
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn articulo__btn">Agregar a carrito</button>
+                          </h4> 
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>100 ML</option>
+                            <option value="1">50 ML</option>
+                            <option value="2">100 ML</option>                          
+                          </select> 
+                          <div class="row mt-3 mb-4">
+                            <div class="col-4">
+                              <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
+                            </div>
+                            <div class="col-5">
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>1</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>  
+                                <option value="2">4</option>  
+                                <option value="2">5</option>                            
+                              </select>
+                            </div>
+                          </div>
+                          <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                        </div>          
+                      </div>
+                    </div>                  
                   </div>
                 </div>
               </div>
-            </div>
+            </div>           
             
-            
+            <!-- Final Modal -->
       </div>
 
 

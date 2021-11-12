@@ -65,7 +65,8 @@
 
 /*Carousel hero*/
 .carrousel__img {
-  opacity: 0.9; }
+  width: 100%;
+  object-fit: cover; }
 
 /*Articulos*/
 .articulo {
@@ -87,7 +88,38 @@
       border: 1px solid #BDA388;
       color: black; }
 
+/*Modal*/
+.modalArt__header {
+  background-color: #BDA388; }
+
+.modalArt__detalle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase; }
+  .modalArt__detalle--marca {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: gray; }
+  .modalArt__detalle--precio {
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase; }
+  .modalArt__detalle--cantidad {
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase; }
+
+.modal-backdrop {
+  z-index: 1040 !important; }
+
 .CarrouselProd__img {
+  width: 100%;
+  object-fit: cover;
   cursor: pointer; }
 
 .modalGallery {

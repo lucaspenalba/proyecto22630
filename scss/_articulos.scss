@@ -22,3 +22,42 @@
     
 }
 
+/*Modal*/
+.modalArt{
+    &__header{
+        background-color: #BDA388;        
+    }
+    &__detalle{
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        
+        &--marca{
+            font-family: 'Roboto Slab', serif;
+            font-size: 15px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: $gris;
+        }
+        &--precio{
+            font-family: 'Roboto Slab', serif;
+            font-size: 25px;
+            font-weight: 800;
+            text-transform: uppercase;
+            
+        }
+        &--cantidad{
+            font-family: 'Roboto Slab', serif;
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+
+
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}

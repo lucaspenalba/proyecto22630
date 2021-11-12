@@ -19,59 +19,77 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg p-3 navbar-light sticky-top navegacion">
       <div class="container">
-        <h1><a class="navbar-brand navegacion__texto" href="../../index.html">Perfume Shop</a></h1>
+        <h1><a class="navbar-brand navegacion__texto" href="./index.html">Perfume Shop</a></h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button>      
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item">
               <a class="nav-link navegacion__texto navegacion__texto--link" href="../../index.html">Lo nuevo</a>
             </li>
             <li class="nav-item dropdown navegacion__subMenu">
-              <a class="nav-link navegacion__texto navegacion__texto--link" href="../masculinos/fraganciasMasculinas.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+              <a class="nav-link navegacion__texto navegacion__texto--link" href="../../secciones/masculinos/fraganciasMasculinas.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
                 Fragancias Masculinas
               </a>
               <ul class="dropdown-menu navegacion__subList" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../masculinos/carolinaHerrenaHombre.html">Carolina Herrera</a></li>
-                <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../masculinos/pacoRabanneHombre.html">Paco Rabanne</a></li>
-                <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../masculinos/calvinKleinHombre.html">Calvin Klein</a></li>
+                <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../../secciones/masculinos/carolinaHerrenaHombre.html">Carolina Herrera</a></li>
+                <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../../secciones/masculinos/pacoRabanneHombre.html">Paco Rabanne</a></li>
+                <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../../secciones/masculinos/calvinKleinHombre.html">Calvin Klein</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown navegacion__subMenu">
-              <a class="nav-link navegacion__texto navegacion__texto--link" href="../femeninos/fraganciasFemeninas.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+              <a class="nav-link navegacion__texto navegacion__texto--link" href="../../secciones/femeninos/fraganciasFemeninas.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
                 Fragancias Femeninas
               </a>
               <ul class="dropdown-menu navegacion__subList" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../femeninos/carolinaHerrenaMujer.html">Carolina Herrera</a></li>
-                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../femeninos/pacoRabanneMujer.html">Paco Rabanne</a></li>
-                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../femeninos/calvinKleinMujer.html">Calvin Klein</a></li>
-                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../femeninos/lancome.html">Lancome</a></li>
+                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../../secciones/femeninos/carolinaHerrenaMujer.html">Carolina Herrera</a></li>
+                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../../secciones/femeninos/pacoRabanneMujer.html">Paco Rabanne</a></li>
+                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../../secciones/femeninos/calvinKleinMujer.html">Calvin Klein</a></li>
+                  <li><a class="dropdown-item navegacion__texto navegacion__texto--subLink" href="../../secciones/femeninos/lancome.html">Lancome</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link navegacion__texto navegacion__texto--link" href="../nosotros.html">Nosotros</a>
+              <a class="nav-link navegacion__texto navegacion__texto--link" href="../../secciones/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navegacion__texto navegacion__texto--link" href="../contacto.html">Contacto</a>
+              <a class="nav-link navegacion__texto navegacion__texto--link" href="../../secciones/contacto.html">Contacto</a>
             </li>
+            <!--Boton carrito de compras-->
+            <a class="btn btn-primary btn-floating navegacion__carro" role="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <i class="fas fa-shopping-cart"></i>              
+            </a>         
           </ul>
-        </div>
-      </div>
+        </div>           
+
+      </div> 
     </nav>
+
+    <!--Offcanvas-->
+    <div class="offcanvas offcanvas-end despliega" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header despliega__cuerpo">
+        <h5 id="offcanvasRightLabel">Carrito de Compras</h5>
+        <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <img src="../../img/canastoVacio.png" class="despliega__img" alt="">
+        <p class="despliega__texto">no tiene productos en su carrito de compras</p> 
+      </div>
+    </div>    
 
       <!--Hero-->
 
       <div id="carouselExampleFade" class="carousel slide carousel-fade carrousel" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active carrousel__item">
-            <img src="../../img/carousel/carousel1.jpg" class="d-block w-100 img-fluid carrousel__img" alt="Imagen para carousel con un frasco">
+            <img src="../../img/carousel/carolinaherrera2.png" class="d-block w-100 img-fluid carrousel__img" alt="Imagen para carousel con un frasco">
           </div>
           <div class="carousel-item carrousel__item">
-            <img src="../../img/carousel/carousel2.jpg" class="d-block w-100 img-fluid carrousel__img" alt="Imagen para carousel con un frasco y petalos">
+            <img src="../../img/carousel/carolinaherrera3.png" class="d-block w-100 img-fluid carrousel__img" alt="Imagen para carousel con un frasco y petalos">
           </div>
           <div class="carousel-item carrousel__item">
-            <img src="../../img/carousel/carousel3.jpg" class="d-block w-100 img-fluid carrousel__img" alt="Imagen para carousel con dos frascos y flores">
+            <img src="../../img/carousel/carolinaherrera1.png" class="d-block w-100 img-fluid carrousel__img" alt="Imagen para carousel con dos frascos y flores">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
