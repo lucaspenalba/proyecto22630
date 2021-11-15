@@ -164,7 +164,8 @@
 .prodInf__separa {
   margin-bottom: 1rem; }
   .prodInf__separa--segunda {
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    margin-top: 1rem; }
 
 .prodInf__descripcion {
   font-family: 'Roboto Slab', serif;
