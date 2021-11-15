@@ -2,7 +2,11 @@
 @mixin botones {
     color: $blanco;
     background-color: $boton;
-    border: 1px solid $boton;           
+    border: 1px solid $boton;
+    text-transform: uppercase;   
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400; 
+    font-size: 1rem;       
         
 }
 
