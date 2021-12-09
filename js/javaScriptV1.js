@@ -39,25 +39,27 @@ console.log(perfume1.iva()); //Calculo del valor del IVA
 
 //Calculo para el valor total de varios productos en un carrito de compras.
 
+let valor = parseInt(prompt("ingrese el valor del Perfume:"));
+let valor2 = parseInt(prompt("ingrese el valor de otro Perfume:"));
+let cuota = parseInt(prompt("¿En cuantas cuotas quiere pagar?"));
+let iva = 0.21;
+let sumaParcial = 0;
+let sumaTotal = 0;
+
 let sumar = (valor, valor2) => {
     return valor + valor2
 };
 
 
 let calculoIva = (sumar, iva) => {
-    return sumar * 0.21;
+    return sumar * iva;
 };
 
 let calculoCuota = (sumar, cuota) => {
     return sumar / cuota;
 };
 
-let valor = parseInt(prompt("ingrese el valor del producto:"));
-let valor2 = parseInt(prompt("ingrese el valor de otro producto:"));
-let cuota = parseInt(prompt("¿En cuantas cuotas quiere pagar?"));
-let iva = 21;
-let sumaParcial = 0;
-let sumaTotal = 0;
+
 
 
 alert ("Su total es:" + " " + sumar(valor, valor2));
