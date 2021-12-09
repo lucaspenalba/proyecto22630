@@ -53,23 +53,26 @@
         &--marca{
             font-family: 'Roboto Slab', serif;
             font-size: 15px;
-            font-weight: 800;
-            text-transform: uppercase;
+            font-weight: 800;            
             color: $gris;
         }
         &--precio{
             font-family: 'Roboto Slab', serif;
             font-size: 25px;
-            font-weight: 800;
-            text-transform: uppercase;
-            
+            font-weight: 800;           
         }
         &--cantidad{
             font-family: 'Roboto Slab', serif;
             font-size: 12px;
+            font-weight: 400;            
+        }
+        &--numero{
+            font-family: 'Roboto Slab', serif;
+            font-size: 12px;
             font-weight: 400;
             text-transform: uppercase;
-        }
+        }   
+
     }
 
 
