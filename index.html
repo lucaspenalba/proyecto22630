@@ -58,7 +58,7 @@
               <a class="btn btn-primary btn-floating navegacion__carro" role="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                 <i class="fas fa-shopping-cart"></i>              
               </a>    
-              <a class="btn btn-primary btn-floating navegacion__carro" role="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <a class="btn btn-primary btn-floating navegacion__carro" role="button" type="button" data-bs-toggle="modal" data-bs-target="#modalProductos">
                 <i class="fas fa-user"></i>             
               </a>      
             </ul>
@@ -81,6 +81,48 @@
       </div>
     </div>  
 
+    <!-- Modal agregar perfumes -->
+    
+    <div class="modal fade modalArt" id="modalProductos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header modalArt__header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>                
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <form id="add-form"> 
+                  <div class="mb-3">
+                    <label for="inputId" class="form-label">Ingrese identificador</label>
+                    <input type="text" class="form-control" id="inputId" placeholder="Ingrese identificador separado">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputName" class="form-label">Nombre del perfume</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Ingrese el nombre del perfume">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputMarca" class="form-label">Marca del perfume</label>
+                    <input type="text" class="form-control" id="inputMarca" placeholder="Ingrese la marca del perfume">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputPrecio" class="form-label">Precio</label>
+                    <input type="text" class="form-control" id="inputPrecio" placeholder="Ingrese el precio">
+                  </div>
+                  <button type="submit" class="btn articulo__btn">Guardar</button>
+                </form> 
+                <div class="col-12">
+                  <div id="listaPerfumes"></div>
+                </div>
+              </div>         
+              </div>
+            </div>                  
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!--Hero-->
     
     <div class="hero">
@@ -95,7 +137,7 @@
     <!-- Main -->
     <div class="container">
       
-      <div class="row justify-content-sm-center">
+      <div id="cardProductos" class="row justify-content-sm-center">
 
           <div class="col-sm-6 col-md-4 col-lg-3 mt-3 text-center">
             <div class="card articulo">   
@@ -326,6 +368,7 @@
 
       
       <!-- Modal -->
+      <div id="modalArticulos">
 
       <div class="modal fade modalArt" id="vipMen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -1142,8 +1185,14 @@
           </div>
         </div>
       </div> 
+
+      </div>
       
       <!-- Final Modal -->
+
+    
+
+
     </div>
 
 
@@ -1205,6 +1254,6 @@
         }
       });
     </script>
-    <script src="./js/javaScriptV1.js"></script>
+    <script src="./js/carga.js"></script>
 </body>
 </html>
