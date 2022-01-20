@@ -92,7 +92,7 @@
           <div class="modal-body">
             <div class="container-fluid">
               <div class="row">
-                <form id="add-form"> 
+                <form action="#" id="add-form"> 
                   <div class="mb-3">
                     <label for="inputId" class="form-label">Ingrese identificador</label>
                     <input type="text" class="form-control" id="inputId" placeholder="Ingrese identificador separado">
@@ -111,8 +111,10 @@
                   </div>
                   <button type="submit" class="btn articulo__btn">Guardar</button>
                 </form> 
+                
                 <div class="col-12">
                   <div id="listaPerfumes"></div>
+                  <div><button id="Toggle" class="btn articulo__btn m-2">Ocultar/Mostrar</button></div>
                 </div>
               </div>         
               </div>
@@ -137,7 +139,7 @@
     <!-- Main -->
     <div class="container">
       
-      <div id="cardProductos" class="row justify-content-sm-center">
+      <div id="cardPerfumes" class="row justify-content-sm-center">
 
           <div class="col-sm-6 col-md-4 col-lg-3 mt-3 text-center">
             <div class="card articulo">   
@@ -1240,7 +1242,7 @@
       
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     
     <script type="text/javascript">
