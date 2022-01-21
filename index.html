@@ -68,7 +68,7 @@
     </nav>
 
       
-    <!--Offcanvas-->
+    <!--Offcanvas Carrito-->
     <div class="offcanvas offcanvas-end despliega" tabindex="2" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header despliega__cuerpo">
         <h5 id="offcanvasRightLabel">Carrito de Compras</h5>
@@ -77,9 +77,38 @@
 
       <div class="offcanvas-body">
         <img src="./img/canastoVacio.png" class="despliega__img" alt="">
-        <p class="despliega__texto">no tiene productos en su carrito de compras</p> 
+        <p class="despliega__texto">no tiene productos en su carrito de compras</p>
+        <div class="perfumesCarrito"></div> 
+
+        <!-- START TOTAL -->
+        <div class="row">
+          <div class="col-12">
+              <div class="shopping-cart-total d-flex align-items-center">
+                  <p class="mb-0">Total</p>
+                  <p class="ml-4 mb-0 carritoTotal">$0</p>
+                  <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                      data-target="#comprarModal">Comprar</button>
+              </div>
+          </div>
+      </div>
+      <!-- END TOTAL -->
+
       </div>
     </div>  
+
+    <!-- START TOTAL -->
+    <div class="row">
+      <div class="col-12">
+          <div class="shopping-cart-total d-flex align-items-center">
+              <p class="mb-0">Total</p>
+              <p class="ml-4 mb-0 precioItemCarrito">$0</p>
+              <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                  data-target="#comprarModal">Comprar</button>
+          </div>
+      </div>
+  </div>
+
+  <!-- END TOTAL -->
 
     <!-- Modal agregar perfumes -->
     
@@ -380,19 +409,19 @@
             </div>                
             <div class="modal-body">
               <div class="container-fluid">
-                <div class="row">
+                <div class="row item">
                   <div class="col-6">
-                    <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/212-vip-men-black.jpg" class="img-fluid" alt=""></a>              
+                    <a href="./secciones/producto/212VipBlack.html"><img src="./img/perfumes/212-vip-men-black.jpg" class="img-fluid itemImg" alt=""></a>              
                   </div>  
                   <div class="col-6">
                     <h2 class="h2 modalArt__detalle">
-                      <strong>212 Vip Black</strong>
+                      <strong class="itemNombre">212 Vip Black</strong>
                     </h2>
                     <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
-                      <strong>Carolina Herrera</strong>
+                      <strong class="itemMarca">Carolina Herrera</strong>
                   </h3>  
                     <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
-                        <strong>$11300</strong>
+                        <strong class="itemPrecio">$11300</strong>
                     </h4> 
                     <select class="form-select" aria-label="Default select example">
                       <option selected>100 ML</option>
@@ -414,7 +443,7 @@
                         </select>
                       </div>
                     </div>
-                    <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                    <button type="button" class="btn articulo__btn agregarCarrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
                   </div>          
                 </div>
               </div>                  
@@ -669,7 +698,7 @@
                         </select>
                       </div>
                     </div>
-                    <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
+                    <button type="button" class="btn articulo__btn agregaCarrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
                   </div>          
                 </div>
               </div>                  
@@ -1257,5 +1286,6 @@
       });
     </script>
     <script src="./js/carga.js"></script>
+    <script src="./js/tienda.js"></script>
 </body>
 </html>
