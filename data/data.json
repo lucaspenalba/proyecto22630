@@ -1,0 +1,20 @@
+[
+    { "nombre": "212 Vip Black", "marca": "Carolina Herrera", "genero": "Hombre", "precio": 11300},
+    { "nombre": "Bad Boy", "marca": "Carolina Herrera", "genero": "Hombre", "precio": 9500},
+    { "nombre": "212 Vip", "marca": "Carolina Herrera", "genero": "Mujer", "precio": 8570},
+    { "nombre": "One", "marca": "Calvin Klein", "genero": "Unisex", "precio": 8400},
+    { "nombre": "Eternity Men", "marca": "Calvin Klein", "genero": "Hombre", "precio": 8190},
+    { "nombre": "Eternity Her", "marca": "Calvin Klein", "genero": "Mujer", "precio": 8990},
+    { "nombre": "Good Girl", "marca": "Carolina Herrera", "genero": "Mujer", "precio": 10200},
+    { "nombre": "La Vie Est Belle", "marca": "Lancome", "genero": "Mujer", "precio": 11500},
+    { "nombre": "Hypnose", "marca": "Lancome", "genero": "Mujer", "precio": 12570},
+    { "nombre": "Phantom", "marca": "Paco Rabanne", "genero": "Hombre", "precio": 13200},
+    { "nombre": "Pure Xs Her", "marca": "Paco Rabanne", "genero": "Mujer", "precio": 9750},
+    { "nombre": "Pure Xs", "marca": "Paco Rabanne", "genero": "Hombre", "precio": 9800},
+    { "nombre": "Olympea", "marca": "Paco Rabanne", "genero": "Mujer", "precio": 9770},
+    { "nombre": "212 Vip", "marca": "Carolina Herrera", "genero": "Hombre", "precio": 13500},
+    { "nombre": "Everyone", "marca": "Calvin Klein", "genero": "Unisex", "precio": 11700},
+    { "nombre": "212 Heroes", "marca": "Carolina Herrera", "genero": "Hombre", "precio": 9500}
+
+
+]
