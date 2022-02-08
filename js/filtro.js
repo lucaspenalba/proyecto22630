@@ -4,40 +4,17 @@ async function cargarUrl(url){
     return respuesta.json();
 }
 
-
 async function cargarJson(){
     let json = await cargarUrl('https://raw.githubusercontent.com/lucaspenalba/JSON/main/perfumes.json');
 
-    console.log(json.genero);
+    console.log(json);
 
-    
-    
-    if (document.querySelector("#cardPerfumes")) {
-        
-        let cardPerfumes = document.querySelector('#cardPerfumes');
-        
-        cardPerfumes.innerHTML = '';
+    let res = document.querySelector('#cardPerfumes');
 
-        insertarHtml(cardPerfumes, json);
+    res.innerHTML = '';
 
-      } if (document.querySelector("#cardMasculino")) {
-
-        let cardPerfumes = document.querySelector('#cardMasculino');
-        
-        cardMasculino.innerHTML = '';
-
-        insertarHtml(cardMasculino, json);
-      }
-
-    
-
-}
-
-
-function insertarHtml(res, json){
     for(let item of json){
-        
-
+        console.log(item.nombre)
         res.innerHTML += `
         <div class="col-sm-6 col-md-4 col-lg-3 mt-3 text-center">
                     <div class="card articulo">             
@@ -53,10 +30,7 @@ function insertarHtml(res, json){
                 </div>       
         `
     }
+
 }
 
-
 cargarJson()
-
-
-
