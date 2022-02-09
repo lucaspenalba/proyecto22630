@@ -10,9 +10,7 @@ async function cargarJson(){
 
     console.log(json);
 
-    let nombre = json[0].nombre;
     
-    console.log(nombre)
     
     
     if (document.querySelector("#cardPerfumes")) {
@@ -96,7 +94,6 @@ async function cargarJson(){
 
     }
     
-    
 
 }
 
@@ -113,16 +110,24 @@ function insertarHtml(res, json, x, y){
     
 
     for(let item of json){        
-        if((item.genero === variable || item.genero === "Unisex" ) && variableMarca == 0 && variable != 0 ){card(res, item);}
+        if((item.genero === variable || item.genero === "Unisex" ) && variableMarca == 0 && variable != 0 ){
+            card(res, item);
+            
+        }
     }
 
     for(let item of json){        
-        if((item.genero === variable || item.genero === "Unisex" ) && item.marca === variableMarca){card(res, item);}
+        if((item.genero === variable || item.genero === "Unisex" ) && item.marca === variableMarca){
+            card(res, item);
+            
+        }
     }
 
     for(let item of json){        
         if(variable == 0 && variableMarca == 0){
-            card(res, item);}
+            card(res, item);
+            
+        }
     }
 
 
@@ -142,7 +147,7 @@ function card (res, item){
                                 <h5 class="card-title articulo__descripcion">${item.nombre}</h5>
                                 <p class="card-text articulo__descripcion articulo__descripcion--marca">${item.marca}</p>
                                 <p class="card-text articulo__descripcion articulo__descripcion--precio">${item.precio}</p>
-                                <button type="button" class="btn articulo__btn" data-bs-toggle="modal" data-bs-target="#generico">comprar</button>
+                                <button type="button" class="btn articulo__btn" data-bs-toggle="modal" id="${item.img}">comprar</button>
                             </div>
                             </div>
                         </div>       
@@ -150,6 +155,13 @@ function card (res, item){
             
 
 }
+
+
+
+
+
+
+
 
 cargarJson()
 
