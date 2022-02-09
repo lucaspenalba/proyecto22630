@@ -110,12 +110,14 @@ function insertarHtml(res, json, x, y){
 
     let variableMarca = y;
 
+    
+
     for(let item of json){        
-        if((item.genero === variable || item.genero ==="Unisex" ) && variableMarca ==  0 ){card(res, item);}
+        if((item.genero === variable || item.genero === "Unisex" ) && variableMarca == 0 && variable != 0 ){card(res, item);}
     }
 
     for(let item of json){        
-        if(item.genero === variable && item.marca === variableMarca){card(res, item);}
+        if((item.genero === variable || item.genero === "Unisex" ) && item.marca === variableMarca){card(res, item);}
     }
 
     for(let item of json){        
