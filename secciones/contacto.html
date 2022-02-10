@@ -110,18 +110,18 @@
             <div class="row">
               <div class="col mb-3">
                 <label class="form-label">Nombre</label>                
-                <input type="text" class="form-control" placeholder="Introduzca su nombre" aria-label="First name">
+                <input type="text" class="form-control" placeholder="Introduzca su nombre" aria-label="First name" id="nombre">
               </div>  
 
               <div class="col mb-3">
                 <label class="form-label">Apellido</label>   
-                <input type="text" class="form-control" placeholder="Introduzca su Apellido" aria-label="Last name">
+                <input type="text" class="form-control" placeholder="Introduzca su Apellido" aria-label="Last name" id="apellido">
               </div>
             </div>
 
             <div class="mb-3">
               <label class="form-label">Correo electronico</label>
-              <input type="text" class="form-control" placeholder="Introduzca su correo electronico" aria-label="Last name">
+              <input type="text" class="form-control" placeholder="Introduzca su correo electronico" aria-label="Last name" id="mail">
             </div>
 
             <div class="mb-3">
@@ -141,13 +141,16 @@
 
             <div class="mb-3">
               <label class="form-label">Comentarios</label>
-              <textarea name="" class="form-control" placeholder="Escriba su mensaje" rows="3"></textarea>
+              <textarea name="" class="form-control" placeholder="Escriba su mensaje" rows="3" id="comentario"></textarea>
             </div>
 
             <!-- Button trigger modal -->
             <button type="button" class="btn formulario__btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Enviar
             </button>
+
+
+            <dir id="contenedor"></dir>
 
             <!-- Modal -->
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -162,7 +165,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn formulario__btn">Enviar</button>
+                    <button type="button" class="btn formulario__btn" id="enviarForm">Enviar</button>
                   </div>
                 </div>
               </div>
@@ -225,5 +228,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="../js/contacto.js"></script>
 </body>
 </html>
