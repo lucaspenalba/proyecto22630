@@ -107,6 +107,7 @@
 
         <div class="row">
           <div class="col-lg-6 col-md-5 shadow rounded p-5">
+            <form action="">
             <div class="row">
               <div class="col mb-3">
                 <label class="form-label">Nombre</label>                
@@ -145,32 +146,10 @@
             </div>
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn formulario__btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="sudmit" class="btn formulario__btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="enviarForm">
               Enviar
             </button>
-
-
-            <dir id="contenedor"></dir>
-
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Contacto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                  </div>
-                  <div class="modal-body">
-                    ¿Desea enviar el formulario?
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn formulario__btn" id="enviarForm">Enviar</button>
-                  </div>
-                </div>
-              </div>
-            </div>      
-
+          </form>
           </div>
 
           <div class="col-lg-6 col-md-7 formulario_img ">

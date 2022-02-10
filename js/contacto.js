@@ -1,10 +1,12 @@
-window.onload = init
+window.onload = iniciar;
 
 let clientes = [];
 
 
-function init(){
-    document.getElementById('enviarForm').addEventListener('click', guardarFormulario);
+function iniciar(){
+    let btnAgregar = document.getElementById('enviarForm');
+    btnAgregar.addEventListener('click', guardarFormulario);
+   
 }
 
 function guardarFormulario (){
@@ -19,15 +21,9 @@ function guardarFormulario (){
     
     console.log("envia")
 
-   clientes.push(cliente)
-   muestraClientes()
+
+   localStorage.setItem("Clientes", JSON.stringify(cliente));
+  
 
 }
 
-function muestraClientes(){
-    let resultado = "";
-    clientes.forEach(cliente => {
-        resultado = resultado + `${cliente.nombre} ${cliente.apellido} ${cliente.mail} ${cliente.inlineFormSelectPref} ${cliente.comentario} <br/> `
-    });
-    document.getElementById('contenedor').innerHTML = resultado;
-}
