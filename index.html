@@ -77,82 +77,14 @@
       </div>
 
       <div class="offcanvas-body">
-        <img src="./img/canastoVacio.png" class="despliega__img" alt="">
-        <p class="despliega__texto">no tiene productos en su carrito de compras</p>
-        <div class="perfumesCarrito"></div> 
-
-        <!-- START TOTAL -->
-        <div class="row">
-          <div class="col-12">
-              <div class="shopping-cart-total d-flex align-items-center">
-                  <p class="mb-0">Total</p>
-                  <p class="ml-4 mb-0 carritoTotal">$0</p>
-                  <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                      data-target="#comprarModal">Comprar</button>
-              </div>
-          </div>
-      </div>-->
-      <!-- END TOTAL -->
-
+        <div class="itemCart"></div>
+        <h4>Total: <strong class="precio-total">$</strong>0</h4>
+        
       </div>
     </div>  
 
-    <!-- START TOTAL -->
-    <!-- <div class="row">
-      <div class="col-12">
-          <div class="shopping-cart-total d-flex align-items-center">
-              <p class="mb-0">Total</p>
-              <p class="ml-4 mb-0 precioItemCarrito">$0</p>
-              <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                  data-target="#comprarModal">Comprar</button>
-          </div>
-      </div>
-  </div>-->
-
-  <!-- END TOTAL -->
-
-    <!-- Modal agregar perfumes -->
     
-    <div class="modal fade modalArt" id="modalProductos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header modalArt__header">
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>                
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <form action="#" id="add-form"> 
-                  <div class="mb-3">
-                    <label for="inputId" class="form-label">Ingrese identificador</label>
-                    <input type="text" class="form-control" id="inputId" placeholder="Ingrese identificador separado">
-                  </div>
-                  <div class="mb-3">
-                    <label for="inputName" class="form-label">Nombre del perfume</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Ingrese el nombre del perfume">
-                  </div>
-                  <div class="mb-3">
-                    <label for="inputMarca" class="form-label">Marca del perfume</label>
-                    <input type="text" class="form-control" id="inputMarca" placeholder="Ingrese la marca del perfume">
-                  </div>
-                  <div class="mb-3">
-                    <label for="inputPrecio" class="form-label">Precio</label>
-                    <input type="text" class="form-control" id="inputPrecio" placeholder="Ingrese el precio">
-                  </div>
-                  <button type="submit" class="btn articulo__btn">Guardar</button>
-                </form> 
-                
-                <div class="col-12">
-                  <div id="listaPerfumes"></div>
-                  <div><button id="Toggle" class="btn articulo__btn m-2">Ocultar/Mostrar</button></div>
-                </div>
-              </div>         
-              </div>
-            </div>                  
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
 
     <!--Hero-->
@@ -172,17 +104,8 @@
       <!-- Lista perfumes -->
       <div id="cardPerfumes" class="row justify-content-sm-center">
                 
-      </div>
-
-
+      </div>  
       
-      <!-- Modal -->
-      <div id="modalArticulos">
-
-
-      </div>
-      
-      <!-- Final Modal -->
 
     
 
@@ -237,20 +160,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     
-    <script type="text/javascript">
-      var nav = document.querySelector('nav');
-
-      window.addEventListener('scroll', function () {
-        if (window.pageYOffset > 300) {
-          nav.classList.add('navegacion');
-        } else {
-          nav.classList.remove('navegacion');
-        }
-      });
-
-    </script>
+    <script src="./js/efecto.js"></script>
     <script src="./js/traer.js"></script>
-    <script src="./js/modal.js"></script>
     
     
 </body>

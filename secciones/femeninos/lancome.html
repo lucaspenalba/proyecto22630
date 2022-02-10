@@ -65,18 +65,20 @@
       </div> 
     </nav>
 
-    <!--Offcanvas-->
-    <div class="offcanvas offcanvas-end despliega" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <!--Offcanvas Carrito-->
+
+    <div class="offcanvas offcanvas-end despliega" tabindex="2" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header despliega__cuerpo">
         <h5 id="offcanvasRightLabel">Carrito de Compras</h5>
         <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="close"></button>
       </div>
 
       <div class="offcanvas-body">
-        <img src="../../img/canastoVacio.png" class="despliega__img" alt="">
-        <p class="despliega__texto">no tiene productos en su carrito de compras</p> 
+        <div class="itemCart"></div>
+        <h4>Total: <strong class="precio-total">$</strong>0</h4>
+        
       </div>
-    </div>    
+    </div>      
     
     
     <!--Hero-->
@@ -111,111 +113,7 @@
 
 
 
-      <!-- Modal --> 
       
-      <div class="modal fade modalArt" id="hypnose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header modalArt__header">
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>                
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-6">
-                    <a href="../../secciones/producto/hypnose.html"><img src="../../img/perfumes/hypnose.jpg" class="img-fluid" alt=""></a>              
-                  </div>  
-                  <div class="col-6">
-                    <h2 class="h2 modalArt__detalle">
-                      <strong>Hypnose</strong>
-                    </h2>
-                    <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
-                      <strong>Lancome</strong>
-                  </h3>  
-                    <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
-                        <strong>$12570</strong>
-                    </h4> 
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>100 ML</option>
-                      <option value="1">50 ML</option>
-                      <option value="2">100 ML</option>                          
-                    </select> 
-                    <div class="row mt-3 mb-4">
-                      <div class="col-4">
-                        <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
-                      </div>
-                      <div class="col-5">
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>1</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="2">3</option>  
-                          <option value="2">4</option>  
-                          <option value="2">5</option>                            
-                        </select>
-                      </div>
-                    </div>
-                    <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
-                  </div>          
-                </div>
-              </div>                  
-            </div>
-          </div>
-        </div>
-      </div> 
-      
-      <div class="modal fade modalArt" id="laVie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header modalArt__header">
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>                
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-6">
-                    <a href="../../secciones/producto/laVieEstBelle.html"><img src="../../img/perfumes/la-vie-est-belle.jpg" class="img-fluid" alt=""></a>              
-                  </div>  
-                  <div class="col-6">
-                    <h2 class="h2 modalArt__detalle">
-                      <strong>La vie est belle</strong>
-                    </h2>
-                    <h3 class="h4 modalArt__detalle modalArt__detalle--marca">
-                      <strong>Lancome</strong>
-                  </h3>  
-                    <h4 class="h4 modalArt__detalle modalArt__detalle--precio">
-                        <strong>$11500</strong>
-                    </h4> 
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>100 ML</option>
-                      <option value="1">50 ML</option>
-                      <option value="2">100 ML</option>                          
-                    </select> 
-                    <div class="row mt-3 mb-4">
-                      <div class="col-4">
-                        <div class="modalArt__detalle modalArt__detalle--cantidad"><p>cantidad</p></div>
-                      </div>
-                      <div class="col-5">
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>1</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="2">3</option>  
-                          <option value="2">4</option>  
-                          <option value="2">5</option>                            
-                        </select>
-                      </div>
-                    </div>
-                    <button type="button" class="btn articulo__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar a carrito</button>
-                  </div>          
-                </div>
-              </div>                  
-            </div>
-          </div>
-        </div>
-      </div> 
-      
-      <!-- Final Modal -->
     </div>
 
     
